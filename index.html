@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandra J. Smith &mdash; Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#top" class="nav-logo">A.J.R.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Portfolio</p>
+      <h1 class="hero-name">Aleksander<br /><em>J. Rosenkilde</em></h1>
+      <p class="hero-title">Senior Counsel &amp; Strategic Advisor</p>
+      <a href="#about" class="btn-primary">View Profile</a>
+    </div>
+    <div class="hero-rule"></div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="about-grid fade-up">
+
+        <div class="about-left">
+          <span class="section-label">About</span>
+          <h2 class="section-heading">Counsel built<br />on principle.</h2>
+          <div class="divider"></div>
+          <p class="about-bio">
+            Alexandra J. Smith is a seasoned legal strategist with over fifteen years of experience advising corporations, executives, and high-net-worth individuals across complex matters in finance, governance, and dispute resolution.
+          </p>
+          <p class="about-bio">
+            Her practice is defined by meticulous preparation, calm judgment under pressure, and an unwavering commitment to her clients' long-term interests. She brings a rare combination of analytical precision and persuasive advocacy to every engagement.
+          </p>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+
+        <div class="about-right">
+          <div class="credentials">
+            <div class="credential-item">
+              <span class="credential-number">15+</span>
+              <span class="credential-label">Years of Practice</span>
+            </div>
+            <div class="credential-item">
+              <span class="credential-number">300+</span>
+              <span class="credential-label">Matters Resolved</span>
+            </div>
+            <div class="credential-item">
+              <span class="credential-number">J.D.</span>
+              <span class="credential-label">Yale Law School</span>
+            </div>
+            <div class="credential-item">
+              <span class="credential-number">3</span>
+              <span class="credential-label">State Bar Admissions</span>
+            </div>
+          </div>
+
+          <div class="areas">
+            <h3 class="areas-heading">Areas of Focus</h3>
+            <ul class="areas-list">
+              <li>Corporate Governance &amp; M&amp;A</li>
+              <li>Commercial Litigation</li>
+              <li>Regulatory Compliance</li>
+              <li>Executive Compensation</li>
+              <li>Private Client Advisory</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Quote -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote class="pull-quote fade-up">
+        &ldquo;Precision in counsel. Clarity in action.&rdquo;
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <span class="section-label section-label--light">Contact</span>
+      <h2 class="section-heading section-heading--light">Let&rsquo;s discuss<br /><em>your matter.</em></h2>
+      <div class="divider divider--light"></div>
+
+      <div class="contact-grid fade-up">
+
+        <div class="contact-info">
+          <div class="contact-block">
+            <p class="contact-label">Office</p>
+            <p class="contact-value">One Financial Center<br />Suite 2400<br />New York, NY 10005</p>
+          </div>
+          <div class="contact-block">
+            <p class="contact-label">Email</p>
+            <p class="contact-value">
+              <a href="mailto:aleksander@rosenkilde.com">aleksander@rosenkilde.se</a>
+            </p>
+          </div>
+          <div class="contact-block">
+            <p class="contact-label">Telephone</p>
+            <p class="contact-value">+45 20 30 17 41</p>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Brief subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your matter briefly..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-primary--dark">Send Enquiry</button>
+          <p class="form-note" id="form-msg"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Aleksander J. Rosenkilde. All rights reserved.</p>
+      <p class="footer-note">This website is for informational purposes only and does not constitute legal advice.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
